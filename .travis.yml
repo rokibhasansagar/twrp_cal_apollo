@@ -57,10 +57,10 @@ deploy:
   on:
     tags: false
     repo: ${TRAVIS_REPO_SLUG}
-    branch: ${TRAVIS_BRANCH}
+    branch: test
 branches:
   only:
-    - ${TRAVIS_BRANCH}
+    - test
   except:
     - /^(?i:untagged)-.*$/
     - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
